@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Venlux Fly and Drive</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1>Venlux Fly and Drive</h1>
+            <nav>
+                <ul>
+                    <li><a href="#welcome">Willkommen</a></li>
+                    <li><a href="#services">Unsere Services</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="welcome">
+        <div class="container">
+            <h2>Willkommen bei Venlux Fly and Drive</h2>
+            <p>Ihre erste Wahl für innovative Flug- und Fahrdienstleistungen. Wir bieten Ihnen einen einzigartigen Service, der Sie sicher ans Ziel bringt – mit Komfort und Stil.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Unsere Services</h2>
+            <div class="service">
+                <h3>Flughafentransfer</h3>
+                <p>Wir bringen Sie pünktlich und komfortabel zu Ihrem Zielort – ganz gleich, ob es sich um einen Flughafen, ein Hotel oder eine andere wichtige Adresse handelt.</p>
+            </div>
+            <div class="service">
+                <h3>Flüge und Helikopterdienste</h3>
+                <p>Unsere Luftfahrzeuge bieten Ihnen schnellen und exklusiven Zugang zu Zielen in Ihrer Nähe und weltweit.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Kontaktieren Sie uns</h2>
+            <p>Haben Sie Fragen oder möchten Sie unseren Service buchen? Kontaktieren Sie uns direkt!</p>
+            <form action="#" method="POST">
+                <label for="name">Ihr Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Ihre E-Mail-Adresse:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Ihre Nachricht:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Absenden</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Venlux Fly and Drive. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+</body>
+</html>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar h1 {
+    text-align: center;
+    font-size: 2em;
+}
+
+.navbar nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+.navbar nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+section {
+    padding: 40px 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.service {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
